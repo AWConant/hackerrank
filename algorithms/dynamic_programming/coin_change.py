@@ -32,6 +32,5 @@ for i in range(1, m+1):
         dp[i][j] = dp[i-1][j]
         if j >= denom[i]:
             dp[i][j] += dp[i][j-denom[i]]
-                
 
 print(dp[m][n])
